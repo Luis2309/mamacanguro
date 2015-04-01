@@ -1,0 +1,4 @@
+div#loginModal {
+  background: url("../images/bg.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
