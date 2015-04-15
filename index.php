@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <? php include('../layout/base.html'); ?>    
-</head>
-<body>
-	<!--login modal-->
-	<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
-		<header class="pg-header">SERVICIOS MÉDICOS MAMÁ CANGURO</header>
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h1 class="text-center">Login</h1>
-				</div>
-				<div class="modal-body">
-					<form class="form col-md-12 center-block">
-						<div class="form-group">
-						<input type="text" class="form-control input-lg" placeholder="Email">
-						</div>
-						<div class="form-group">
-						<input type="password" class="form-control input-lg" placeholder="Password">
-						</div>
-						<div class="form-group">
-						<button class="btn btn-primary btn-lg btn-block">Sign In</button>
-						<span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span>
-						</div>
-					</form>
-				</div>				
-				<div class="modal-footer">
-					<div class="col-md-12">
-					<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- script references -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-</body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="BLENS101">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>LOGIN - Clínica Mamá Canguro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/img/icon.ico" />
+
+  </head>
+
+  <body>
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" action="index.html">
+		        <h2 class="form-login-heading">Iniciar Sesión</h2>
+		        <div class="login-wrap">
+		            <input type="text" class="form-control" placeholder="Nombre Usuario" autofocus>
+		            <br>
+		            <input type="password" class="form-control" placeholder="Clave">
+		            <label class="checkbox">
+		                <span class="pull-right">
+		                    <a data-toggle="modal" href="login.html#myModal"> Olvidó la contraseña?</a>
+		
+		                </span>
+		            </label>
+		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> Entrar</button>
+		            <hr>
+		            
+		            <div class="login-social-link centered">
+		            <p>Eliga su red social preferida</p>
+		                <button class="btn btn-facebook" type="submit"><i class="fa fa-facebook"></i> Facebook</button>
+		                <button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button>
+		            </div>
+		            <div class="registration">
+		                Aún no tiene cuenta?<br/>
+		                <a class="" href="#">
+		                    Crear una nueva cuenta
+		                </a>
+		            </div>
+		
+		        </div>
+		
+		          <!-- Modal -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Forgot Password ?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Enter your e-mail address below to reset your password.</p>
+		                          <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+		
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+		                          <button class="btn btn-theme" type="button">Submit</button>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal -->
+		
+		      </form>	  	
+	  	
+	  	</div>
+	  </div>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("assets/img/login-bg.jpg", {speed: 500});
+    </script>
+
+
+  </body>
 </html>
