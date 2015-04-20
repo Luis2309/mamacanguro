@@ -42,7 +42,7 @@
 				if ($Tipo == "administrador")
 				{
 					$_SESSION["UsuarioLogueado"] = $usuario;
-					header("Location: /mamacanguro/administrador");
+					header("Location: /mamacanguro/admin");
 				}											
 			}
 		}
