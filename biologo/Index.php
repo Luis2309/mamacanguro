@@ -155,7 +155,7 @@ if (mysqli_connect_errno())
                                 <!-- First Member -->
                                 <div class="desc">
                                     <div class="thumb">
-                                        <img class="img-circle" src="assets/img/ui-divya.jpg" width="35px" height="35px" align="">
+                                        <img class="img-circle" src="../assets/img/paciente.jpg" width="35px" height="35px" align="">
                                     </div>
                                     <div class="details">
                                         <p><a href="#">DIVYA MANIAN</a><br/>
