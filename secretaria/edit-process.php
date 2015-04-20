@@ -29,7 +29,7 @@
 ?>
 <html>
 <head>
-<title>Detalles Doctor</title>
+<title>Detalles Secretaria</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="icon" type="image/png" href="../assets/img/icon.ico" />
 <!-- Bootstrap core CSS -->
@@ -56,7 +56,7 @@
   <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-          <h4 class="mb"><i class="fa fa-angle-right"></i>Datos Doctor</h4>
+          <h4 class="mb"><i class="fa fa-angle-right"></i>Datos Secretaria</h4>
       <table class="table table-striped">
         <tr>
             <td width="200"><b>DNI</b></td>

@@ -1,11 +1,11 @@
-<?	
+<?php	
 	//inicializar la sesion
 	session_start();
 	//coloacomos codigo php en todas nuestras pagina
 	//echo $_SESSION["UsuarioLogueado"];
 	if($_SESSION["UsuarioLogueado"] =="")
 	{
-		header("Location: sin-acceso.html");
+		header("Location: /mamacanguro/sin-acceso.html");
 		exit;
 	}
 	$User = $_SESSION["UsuarioLogueado"];
@@ -14,7 +14,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Administrador | Mama Canguro</title>
+		<title>Secretaria | Mama Canguro</title>
 		<link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script src="assets/js/jquery.min.js"></script>
 		<link href="assets/css/style-menu-secre.css" rel='stylesheet' type='text/css' />
@@ -79,7 +79,7 @@
 					</div>
 					<div class="banner-grid text-center">
 						<span class="top-icon4"> </span>
-						<h3>modificar datos</h3>
+						<a href="/mamacanguro/secretaria/edit.php?chr_dni_usuario=<?=$User?>"><h3>Modificar datos</h3></a>				
 					</div>
 					<div class="banner-grid text-center">
 						<span class="top-icon5"> </span>

@@ -22,7 +22,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Modificar Datos Doctor</title>
+<title>Modificar Datos Secretaria</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="icon" type="image/png" href="../assets/img/icon.ico" />
 <!-- Bootstrap core CSS -->
