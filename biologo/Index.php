@@ -1,24 +1,15 @@
-<?php
-    // Inicializar la sesion
-    //session_start();
-    // Colocamos codigo php en todas nuestras pagina
-    // echo $_SESSION["UsuarioLogueado"];
-    //if($_SESSION["UsuarioLogueado"] != "")
-    //{
-     //   header("Location: Coordinador.php");
-       // exit;
-    //}
-    $con=mysqli_connect("localhost","root","bbns","bdmaca");
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-
-    //$sql= "CALL taatencion_laboratorio(now);";
-/*  $sql .= "CALL TComunicados_Top7();";
-    $sql .= "CALL TInformacion_Listar();";
-*/  
+<?php   
+    //inicializar la sesion
+    session_start();
+    //coloacomos codigo php en todas nuestras pagina
+    //echo $_SESSION["UsuarioLogueado"];
+    if($_SESSION["UsuarioLogueado"] =="")
+    {
+        header("Location: /mamacanguro/sin-acceso.html");
+        exit;
+    }
+    $User = $_SESSION["UsuarioLogueado"];
+    //$User = $_GET["txtIdUsuario"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,13 +76,13 @@ if (mysqli_connect_errno())
                         <div class="banner-grid text-center">
                             <a href="AdmiLaboratorio.php">
                                 <span class="top-icon3"> </span>
-                                <h3>Administrar Datos</h3>
+                                <a href="/mamacanguro/doctor/edit.php?chr_dni_usuario=<?=$User?>"><h3>Actualizar mis datos</h3></a>
                             </a>
                         </div>
                         <div class="banner-grid text-center">
                             <a href="index.php">
                                 <span class="top-icon5"> </span>
-                                <h3>Cerrar Sistema</h3>
+                                <a href="/mamacanguro/logout.php"><h3>Salir del Sistema</h3></a>
                             </a>
                         </div>
                         <div class="clearfix"> </div>
