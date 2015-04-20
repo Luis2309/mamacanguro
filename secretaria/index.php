@@ -1,10 +1,23 @@
+<?	
+	//inicializar la sesion
+	session_start();
+	//coloacomos codigo php en todas nuestras pagina
+	//echo $_SESSION["UsuarioLogueado"];
+	if($_SESSION["UsuarioLogueado"] =="")
+	{
+		header("Location: sin-acceso.html");
+		exit;
+	}
+	$User = $_SESSION["UsuarioLogueado"];
+	//$User = $_GET["txtIdUsuario"];
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Administrador | Mama Canguro</title>
 		<link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script src="assets/js/jquery.min.js"></script>
-		<link href="assets/css/style-menu-admin.css" rel='stylesheet' type='text/css' />
+		<link href="assets/css/style-menu-secre.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
