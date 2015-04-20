@@ -5,7 +5,7 @@
 	//echo $_SESSION["UsuarioLogueado"];
 	if($_SESSION["UsuarioLogueado"] =="")
 	{
-		header("Location: sin-acceso.html");
+		header("Location: /mamacanguro/sin-acceso.html");
 		exit;
 	}
 	$User = $_SESSION["UsuarioLogueado"];
