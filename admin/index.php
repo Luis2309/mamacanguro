@@ -1,3 +1,6 @@
+<?php
+  
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,7 +51,7 @@
       <!--logo end-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="login.php">Cerrar Sesión</a></li>
+          <li><a class="logout" href="logout.php">Cerrar Sesión</a></li>
         </ul>
       </div>
     </header><!--header end-->
@@ -60,7 +63,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
 
-          <p class="centered"><a href="#"><img src="../assets/img/logo_canguro.png" class="img-circle" width="60"></a></p>
+          <p class="centered"><a href="edit.php"><img src="../assets/img/logo_canguro.png" class="img-circle" width="60"></a></p>
           <h5 class="centered">Oscar Vizcarra</h5>
 
           <li class="mt">
@@ -76,8 +79,8 @@
             <span>Biólogo - Opciones</span>
             </a>
             <ul class="sub">
-              <li><a href="#">Recepcionar muestra</a></li>
-              <li><a href="#">Ingresar resultado de Ex.</a></li>
+              <li><a href="recepcionar-muestra.php">Recepcionar muestra</a></li>
+              <li><a href="ingresar-resultado-examen.php">Ingresar resultado de Ex.</a></li>
             </ul>
            </li>
 
@@ -87,8 +90,8 @@
             <span>Doctor - Opciones</span>
             </a>
             <ul class="sub">
-              <li><a href="#">Llenar Historia Clínica</a></li>
-              <li><a href="#">Administrar Antecedentes</a></li>
+              <li><a href="llenar-historia.php">Llenar Historia Clínica</a></li>
+              <li><a href="administrar-antecedentes.php">Administrar Antecedentes</a></li>
             </ul>
           </li>
 
@@ -98,20 +101,20 @@
               <span>Secretaria - Opciones</span>
             </a>
             <ul class="sub">
-              <li><a href="#">Administrar Filiación</a></li>
-              <li><a href="#">Registrar Consulta</a></li>
+              <li><a href="administrar-filiacion.php">Administrar Filiación</a></li>
+              <li><a href="registrar-consulta.php">Registrar Consulta</a></li>
             </ul>
           </li>
 
           <li class="mt">
-            <a class="active" href="#">
+            <a class="active" href="administrar-usuarios.php">
               <i class="fa fa-dashboard"></i>
               <span>Administrar Usuarios</span>
             </a>
           </li>
 
           <li class="mt">
-            <a class="active" href="#">
+            <a class="active" href="reportes.php">
               <i class="fa fa-dashboard"></i>
               <span>Reportes</span>
             </a>

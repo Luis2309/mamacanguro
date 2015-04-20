@@ -132,27 +132,11 @@
         <h3><i class="fa fa-angle-right"></i> RESTAURAR ESTADO ANTERIOR DE LA BASE DE DATOS</h3>
 
         <!-- BASIC FORM ELEMENTS -->
-        <div class="row mt">
-          <div class="col-lg-12">
-            <div class="form-panel">
-              <form class="form-horizontal style-form" method="get">
-                <div class="form-group">
-                  <label class="col-sm-4 col-sm-4 control-label">Seleccione el archivo de Copia de Seguridad:</label>
-                  <div class="col-sm-8">
-                      <input type="file" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-3">
-                  </div>
-                  <div class="col-sm-6">
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Realizar copia de seguridad</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div><!-- col-lg-12-->       
-        </div><!-- /row -->
+
+        <!-- ************************************************************************************************************** -->
+        <!-- Aquí van las funcionalidades de los otros usuarios -->
+        <!-- ************************************************************************************************************** -->
+
       </section><!-- /wrapper -->
     </section><!-- /MAIN CONTENT -->
 
