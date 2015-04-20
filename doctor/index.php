@@ -1,7 +1,20 @@
+<?php	
+	//inicializar la sesion
+	session_start();
+	//coloacomos codigo php en todas nuestras pagina
+	//echo $_SESSION["UsuarioLogueado"];
+	if($_SESSION["UsuarioLogueado"] =="")
+	{
+		header("Location: sin-acceso.html");
+		exit;
+	}
+	$User = $_SESSION["UsuarioLogueado"];
+	//$User = $_GET["txtIdUsuario"];
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Doctor | Mama Canguro</title>
+		<title>Menú Doctor | Mama Canguro</title>
 		<link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<link rel="icon" type="image/png" href="assets/img/icon.ico" />
 		<script src="assets/js/jquery.min.js"></script>
@@ -11,6 +24,7 @@
 		</script>
 		<!---- animated-css ---->
 		<link href="assets/css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="icon" type="image/png" href="../assets/img/icon.ico" />
 		<script type="text/javascript" src="assets/js/jquery.corner.js"></script> 
 		<script src="assets/js/wow.min.js"></script>
 		<script>
@@ -52,15 +66,17 @@
 		<div class="bg">
 		<!----- start-header---->
 		<div class="container">
+		<form name="fmUsuario" method="post" action="">
 			<div class="top-banner-grids wow bounceInUp" data-wow-delay="0.4s">
 					<div class="banner-grid banner-grid-active text-center">
 						<span class="top-icon1"> </span>
-						<h3>Actualizar mis datos</h3>
+						<a href="/mamacanguro/doctor/edit.php?chr_dni_usuario=<?=$User?>"><h3>Actualizar mis datos</h3></a>
 					</div>				
 					<div class="banner-grid text-center">
-						<span class="top-icon5"> </span>
-						<h3>cerrar sistema</h3>
+						<span class="top-icon2"> </span>
+						<a href="/mamacanguro/logout.php"><h3>Salir del Sistema</h3></a>
 					</div>
+				 </form> 
 					<div class="clearfix"> </div>
 				</div>
 				</div>
