@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     // Inicializar la sesion
     //session_start();
@@ -20,6 +21,20 @@ if (mysqli_connect_errno())
 /*  $sql .= "CALL TComunicados_Top7();";
     $sql .= "CALL TInformacion_Listar();";
 */  
+=======
+<?php   
+    //inicializar la sesion
+    session_start();
+    //coloacomos codigo php en todas nuestras pagina
+    //echo $_SESSION["UsuarioLogueado"];
+    if($_SESSION["UsuarioLogueado"] =="")
+    {
+        header("Location: /mamacanguro/sin-acceso.html");
+        exit;
+    }
+    $User = $_SESSION["UsuarioLogueado"];
+    //$User = $_GET["txtIdUsuario"];
+>>>>>>> origin/master
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,6 +76,7 @@ if (mysqli_connect_errno())
           MENU
           *********************************************************************************************************************************************************** -->
       <!--menu start-->
+<<<<<<< HEAD
 
             <div class="bg">   
                     <div class="container">
@@ -96,6 +112,40 @@ if (mysqli_connect_errno())
                                 </a>
                             </div>
                             <div class="clearfix"> </div>
+=======
+            <div class="bg">             
+                <div class="container">
+                    <div class="top-banner-grids wow bounceInUp" data-wow-delay="0.4s">
+                        <div class="banner-grid banner-grid-active text-center">
+                            <!--<a href="index.html">-->
+                            <span class="top-icon1"> </span>
+                            <h3>Pagina Principal</h3>
+                           <!-- </a>-->
+                        </div>
+                        <div class="banner-grid text-center">
+                            <a href="BuscarPaciente.php">
+                                <span class="top-icon2"> </span>
+                                <h3>Buscar Paciente</h3>
+                            </a>
+                        </div>
+                        <div class="banner-grid text-center">
+                            <a href="Reportes.php">
+                                <span class="top-icon3"> </span>
+                                <h3>Generar Reportes</h3>
+                            </a>
+                        </div>
+                        <div class="banner-grid text-center">
+                            <a href="AdmiLaboratorio.php">
+                                <span class="top-icon3"> </span>
+                                <a href="/mamacanguro/doctor/edit.php?chr_dni_usuario=<?=$User?>"><h3>Actualizar mis datos</h3></a>
+                            </a>
+                        </div>
+                        <div class="banner-grid text-center">
+                            <a href="index.php">
+                                <span class="top-icon5"> </span>
+                                <a href="/mamacanguro/logout.php"><h3>Salir del Sistema</h3></a>
+                            </a>
+>>>>>>> origin/master
                         </div>
                     </div>
                 

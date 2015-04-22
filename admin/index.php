@@ -1,5 +1,15 @@
-<?php
-  
+<?php 
+  //inicializar la sesion
+  session_start();
+  //coloacomos codigo php en todas nuestras pagina
+  //echo $_SESSION["UsuarioLogueado"];
+  if($_SESSION["UsuarioLogueado"] =="")
+  {
+    header("Location: /mamacanguro/sin-acceso.html");
+    exit;
+  }
+  $User = $_SESSION["UsuarioLogueado"];
+  //$User = $_GET["txtIdUsuario"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +61,7 @@
       <!--logo end-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="logout.php">Cerrar Sesión</a></li>
+          <li><a class="logout" href="/mamacanguro/logout.php">Cerrar Sesión</a></li>
         </ul>
       </div>
     </header><!--header end-->
@@ -63,7 +73,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
 
-          <p class="centered"><a href="edit.php"><img src="../assets/img/logo_canguro.png" class="img-circle" width="60"></a></p>
+          <p class="centered"><a href="/mamacanguro/admin/edit.php?chr_dni_usuario=<?=$User?>"><img src="../assets/img/logo_canguro.png" class="img-circle" width="60"></a></p>
           <h5 class="centered">Oscar Vizcarra</h5>
 
           <li class="mt">
